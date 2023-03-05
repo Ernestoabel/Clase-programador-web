@@ -8,7 +8,7 @@ function calcularFactorial(dato){
     //let resultado;
     if(dato==0 || dato ==1){
         return 1;
-    }else if(dato>1){
+    }else if(dato>1 && dato<11){
         return (dato * calcularFactorial(dato - 1));
     }else{
         return "Un numero negativo no puede ser factorizado";
