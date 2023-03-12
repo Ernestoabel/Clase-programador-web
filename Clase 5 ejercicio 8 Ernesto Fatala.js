@@ -5,13 +5,19 @@ luego recorriendolo para mostrar el resultado deseado del ejercicio. */
 let mensaje;
 let guion='-';
 let frase='';
+let array=[];
+let indice=0;
 do{
     mensaje=prompt("Ingrse una palabra de la cadena: ");
     if(mensaje!='cancelar'){
         frase+=mensaje;
         frase+=guion;
-        console.log(frase);
+        array[indice]=mensaje+guion;
     }
+    indice++;
 }while(mensaje.includes("cancelar")!=true);
     
 console.log(frase);
+for(let verArray of array){
+    console.log(verArray);
+}
